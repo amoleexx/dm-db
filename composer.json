@@ -1,5 +1,5 @@
 {
-    "name": "amo/dm-db",
+    "name": "amo1943/dm-db",
     "description": "ThinkPHP ORM driver for DM(达梦),KingDatabase(金仓)。基于 bingher/db fork，适配未安装 Oracle 兼容字典视图的 DM8 发行版（使用 SYSOBJECTS/SYSCOLUMNS 原生字典）",
     "type": "library",
     "require": {
@@ -20,7 +20,7 @@
     },
     "authors": [
         {
-            "name": "amo"
+            "name": "amo1943"
         }
     ],
     "minimum-stability": "stable",
