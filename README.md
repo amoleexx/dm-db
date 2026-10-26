@@ -1,6 +1,6 @@
 # think-orm driver for DM(达梦),GBase8s(南大通用),OpenGauss(高斯),KingBase(金仓)
 
-> **本包说明**：`amoleexx/dm-db` 是 `bingher/db` 的 fork，专为**未安装 Oracle 兼容字典视图**的达梦 DM8 发行版适配。与原包差异：
+> **本包说明**：`amo1943/dm-db` 是 `bingher/db` 的 fork，专为**未安装 Oracle 兼容字典视图**的达梦 DM8 发行版适配。与原包差异：
 >
 > 1. `src/connector/DM.php`：`getFields()` / `getTables()` 改为使用达梦原生系统表 `SYSOBJECTS` / `SYSCOLUMNS`（原实现依赖 `DBA_OBJECTS`、`ALL_TABLES` 等 Oracle 兼容视图，精简版 DM8 中不存在会报"无效的表或视图"）。
 > 2. `src/builder/DM.php`：`parseKey()` 对字段名加双引号前先转大写（达梦双引号内大小写敏感，原实现小写字段名会报"无效的列名"）。
@@ -10,7 +10,7 @@
 ## 安装
 
 ```shell
-composer require amoleexx/dm-db
+composer require amo1943/dm-db
 ```
 
 ## DM8(达梦)
