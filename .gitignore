@@ -1,0 +1,7 @@
+runtime/
+vendor/
+config/
+*.lock
+.phpunit.result.cache
+.vscode/
+.env
